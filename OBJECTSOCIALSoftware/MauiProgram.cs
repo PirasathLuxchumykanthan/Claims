@@ -20,6 +20,8 @@ namespace OBJECTSOCIALSoftware
             //normal her a member have a login the can use. so remeber that
             //so total yes then wee have 2 business software and 4 private software..
             //lest say this if a person login a business then he is serious business man.and he need to work no fun.. no share stuff..
+            //well i say this will become mind blow
+
             builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software = Claims.Software.Business });
 
             return builder.Build();

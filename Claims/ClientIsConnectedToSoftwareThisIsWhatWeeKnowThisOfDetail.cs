@@ -25,4 +25,7 @@ public class ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail
     //ok lets get back
     //wee just need to know if is app or web
     //first i need to clearn maui files
+    //wee have a problem wee need to tell what system it will work for..
+    //so i add the browser i know.
+    //and then wee have some device to.. wee work whit the system maui
 }

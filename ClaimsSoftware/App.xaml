@@ -5,10 +5,7 @@
              x:Class="ClaimsSoftware.App">
     <Application.Resources>
         <ResourceDictionary>
-
             <Color x:Key="PageBackgroundColor">#000</Color>
-
-
         </ResourceDictionary>
     </Application.Resources>
 </Application>

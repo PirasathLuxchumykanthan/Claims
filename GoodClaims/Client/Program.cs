@@ -9,6 +9,6 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 //i made the same stuff add Claims
 //and btw sorry my english i need to say but i do my best
 //this will show how i get invold whit the diffrent project so u can see
-builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software = Claims.Software.Private });
+builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software = Claims.Software.PrivateGood });
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 await builder.Build().RunAsync();

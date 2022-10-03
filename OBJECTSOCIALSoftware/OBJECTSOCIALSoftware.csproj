@@ -51,6 +51,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Claims\Claims.csproj" />
+      <ProjectReference Include="..\WelcomeToMindBrain\WelcomeToMindBrain.csproj" />
     </ItemGroup>
 
 </Project>

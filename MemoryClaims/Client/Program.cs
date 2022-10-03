@@ -8,5 +8,5 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 //btw i feel this book need to be free and live.. so if you understand it then 3 level sick story 
 //no big deal 
 //i just made a link to the commit so ppl come to this..
-builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software = Claims.Software.Private });
+builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software = Claims.Software.PrivateClaims });
 await builder.Build().RunAsync();

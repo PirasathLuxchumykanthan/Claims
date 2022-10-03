@@ -14,5 +14,5 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 //lets connect every one in this world and show them how to connect thats why connecting togher 
 //this story is my me.. thx for reading the comment.,
 //my comment is my story in this book and this is me.. and my art... crazy art.. but my art
-builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software=Claims.Software.Private });
+builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software=Claims.Software.PrivateBad });
 await builder.Build().RunAsync();

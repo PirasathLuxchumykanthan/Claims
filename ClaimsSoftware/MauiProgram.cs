@@ -10,7 +10,7 @@ namespace ClaimsSoftware
             //made the same
             var builder = MauiApp.CreateBuilder();
             builder.UseMauiApp<App>();
-            builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software = Claims.Software.Private });
+            builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software = Claims.Software.PrivateClaims });
             builder.Services.AddMauiBlazorWebView();
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();

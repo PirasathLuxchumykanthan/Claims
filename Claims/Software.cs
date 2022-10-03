@@ -6,5 +6,8 @@ using System.Threading.Tasks;
 namespace Claims;
 public enum Software
 {
-    Business,Private
+    /// <summary>
+    /// PirvateClaims is the goal
+    /// </summary>
+    Business,PrivateBad,PrivateGood,PirvateMemory,PrivateMemory,PrivateClaims
 }
