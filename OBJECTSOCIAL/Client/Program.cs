@@ -11,5 +11,6 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 // iw ant to do this as lifestyle be call if ppl can donate me
 //haha btw is business software.
 //so cool u can see this..
+//i just dont know how to share this i will find out...
 builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software = Claims.Software.Business });
 await builder.Build().RunAsync();

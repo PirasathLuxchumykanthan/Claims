@@ -19,6 +19,7 @@ public class ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail
     public Software Software { get; init; }
     //i made  it like this the software claims are the main the social..
     //but i need a business to.. so i made i like this to..
-    //made it default bce wee have more claims project then "OS" OBJECT:SOCIAL
-    public Service Service { get; init; } = Service.Claims;
+    //wee already know by software.. hmm so confuss
+    //ok wee need to know what behind software the person use
+    //did u find out every time in this say + // then there are something live.
 }
