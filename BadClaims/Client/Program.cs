@@ -8,5 +8,6 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 //made bad.claims
 //btw all comment her also log.. in this story behind the code.
 //as i thing need to be social..
+
 builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software=Claims.Software.Private });
 await builder.Build().RunAsync();
