@@ -7,20 +7,15 @@ namespace ClaimsSoftware
     {
         public static MauiApp CreateMauiApp()
         {
+            //made the same
             var builder = MauiApp.CreateBuilder();
-            builder
-                .UseMauiApp<App>()
-                .ConfigureFonts(fonts =>
-                {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                });
-
+            builder.UseMauiApp<App>();
+            builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software = Claims.Software.Private });
             builder.Services.AddMauiBlazorWebView();
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
 
-            builder.Services.AddSingleton<WeatherForecastService>();
 
             return builder.Build();
         }
