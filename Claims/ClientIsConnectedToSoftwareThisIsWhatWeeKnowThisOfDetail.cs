@@ -22,4 +22,7 @@ public class ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail
     //wee already know by software.. hmm so confuss
     //ok wee need to know what behind software the person use
     //did u find out every time in this say + // then there are something live.
+    //ok lets get back
+    //wee just need to know if is app or web
+    //first i need to clearn maui files
 }
