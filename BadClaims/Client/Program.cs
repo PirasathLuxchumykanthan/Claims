@@ -5,5 +5,8 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("main");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftware() { Software=Claims.Software.Private });
+//made bad.claims
+//btw all comment her also log.. in this story behind the code.
+//as i thing need to be social..
+builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software=Claims.Software.Private });
 await builder.Build().RunAsync();
