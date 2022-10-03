@@ -14,6 +14,7 @@ public class ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail
     /// i dream about to make a story like this.. time by time..
     /// 
     /// what i do.. can be a story from a text... follow me..
+    /// okay btw if you developer thats funny i made 2 story..
     /// </summary>
    public Software Software { get; init; }
 }
