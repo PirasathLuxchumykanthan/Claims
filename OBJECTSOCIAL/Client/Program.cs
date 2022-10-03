@@ -9,5 +9,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 //haha i waited to add the ddl to claims bce this is is business connet to the business...
 // iw ant to do this as lifestyle be call if ppl can donate me
-builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software = Claims.Software.Private });
+//haha btw is business software.
+//so cool u can see this..
+builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software = Claims.Software.Business });
 await builder.Build().RunAsync();
