@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components.WebView.Maui;
-using OBJECTSOCIALSoftware.Data;
+
 
 namespace OBJECTSOCIALSoftware
 {
@@ -21,8 +21,21 @@ namespace OBJECTSOCIALSoftware
             //so total yes then wee have 2 business software and 4 private software..
             //lest say this if a person login a business then he is serious business man.and he need to work no fun.. no share stuff..
             //well i say this will become mind blow
+      //know you know why i have inset unkown
+           builder.Services.AddScoped(x => new Claims.ClientDetail() { Software = Claims.Software.Business, Entrance=
+#if ANDROID
+                 Claims.Entrance.Android
+#elif MACCATALYST
+ Claims.Entrance.Mac
+#elif WINDOWS
+Claims.Entrance.Microsoft
+#elif IOS
+ Claims.Entrance.iOS
+#else
+Claims.Entrance.Unknown
+#endif
 
-            builder.Services.AddScoped(x => new Claims.ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail() { Software = Claims.Software.Business });
+           });
 
             return builder.Build();
         }

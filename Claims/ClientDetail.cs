@@ -1,5 +1,5 @@
 ﻿namespace Claims;
-public class ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail
+public class ClientDetail : IClientDetail
 {
     /// <summary>
     /// I made this software beaucse i like github and this time system 
@@ -28,4 +28,12 @@ public class ClientIsConnectedToSoftwareThisIsWhatWeeKnowThisOfDetail
     //wee have a problem wee need to tell what system it will work for..
     //so i add the browser i know.
     //and then wee have some device to.. wee work whit the system maui
+    //i thing to make this as interface so i can inject javascript in browser side 
+    public Entrance Entrance { get; set; }
+
+    public bool IsWebSite => false;
+    //is a person that yet not have installe t the app..
+    //let make this app almost same but lets see if a business man or private person
+    //i change the name of this file maybe it was to big i dont know
+
 }
